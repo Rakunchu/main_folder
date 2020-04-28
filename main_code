@@ -1,52 +1,11 @@
-Apr 27
-<!DOCTYPE html>
-<html lang="jp" dir="ltr">
-<head>
-<meta charset="utf-8">
-<title>Rakunchu</title>
-<br>
-    <h2>らくんちゅ　ー　幸せな人生は、楽しさから。</h2>
-<br>
-</head>
+h2{color: Tomato;text-align: center;}
 
-<style>
-   body {
-      background-image: url(rankunchu_logo.png)
-    }
-    h2 {
-      color:rgb(0, 0, 0);
-    }
+html{background-color: rgb(51, 102, 153);opacity: 1;}
 
-</style>
-<body style="color:Tomato;">
-  メインの目的⇒<br>
-  ユーザーの健康維持<br>
-  <p>
-  ・栄養管理をする<br>
-  　・年齢、性別、身長、体重を知る⇒<br>
-  　　適切な摂取カロリー、栄養素を判別・計算する。<br>
-  </p>
+body{color: white;}
 
-  <p>
-  ・冷蔵庫の中身を管理する。<br>
-  　・食品の購入時にその都度買ったもの・個数を記録（将来的にカメラで判別⇨自動的に追加）<br>
-  　・賞味期限が近づいてきたらアプリや扉の液晶が通知する<br>
-  　・中にある食品だけで作れるレシピを<br>
-  </p>
-  <p>
-  ・自分のごみ削減量と自治体のゴミ予算を紐づけて、全員がこの調子だと〇〇〇万円削れるなども通知<br>
-  　・使用者のモチベーションの維持につながる。<br>
-  　・削減したお金の新たなみちについても載せてみる。<br>
-  　　・実際にあった例⇒横浜市がゴミ30％減らせた。<br>
-  　　　　　　　　　　　⇒ごみ焼却炉2つ削減<br>
-  　　　　　　　　　　　　⇒税金が1200億円削減！<br>
-  </p>
+body{border-style: dotted; border-width: thick; border-color: Tomato
+}
 
-  <p>
-  ・近くのスーパー（お気に入り登録）のお得情報を発信する。
-  </p>
-  <ul>
-     <li><A href="https://github.com/Rakunchu">Githubのページ</A></li>
- </ul>
-</body>
-</html>
+h2{font-family: "Lucida Console", Courier, monospace;}
+h3{font-family: 'Impact', Charcoal, sans-serif;	}
