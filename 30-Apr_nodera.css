@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+h2{
+    font-size: 40px; color: Tomato;text-align: center;
+}
+
+h3{
+    
+}
+
+body{
+    color: darkgreen;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p1-p5{
+    font-size: 25px;
+}
+
+li{
+    text-decoration: none;
+}
