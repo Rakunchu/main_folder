@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="jp" dir="ltr">
 <head>
+<style>
+h1{color: black; text-align: center}
+h3{color: black; text-align: center}
+</style>
 <meta charset="utf-8">
 <title>Rakunchu</title>
 <link rel="stylesheet" href="style.css">
 <br>
-    <h2>らくんちゅ　ー　幸せな人生は、楽しさから。</h2>
+    <h1>らくんちゅ</h1>
+    <h3>幸せな人生は、楽しさから。</h3>
 <br>
 <br>
 </head>
