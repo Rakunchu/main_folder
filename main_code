@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="jp" dir="ltr">
 <head>
+<style>
+h1{color: black;text-align: middle}
+h3{color: black;text-align: middle}
+</style>
 <meta charset="utf-8">
 <title>Rakunchu</title>
 <br>
-    <h2>らくんちゅ　ー　幸せな人生は、楽しさから。</h2>
+    <h1>らくんちゅ<h1>
+    <h3>幸せな人生は、楽しさから。</h3>
 <br>
 </head>
-
-<style>
-   body {
-      background-image: url(rankunchu_logo.png)
-    }
-    h2 {
-      color:rgb(0, 0, 0);
-    }
-
-</style>
+  <ul>
+     <li><A href="https://github.com/Rakunchu">Githubのページ</A></li>
+ </ul>
 <body style="color:Tomato;">
   メインの目的⇒<br>
   ユーザーの健康維持<br>
@@ -44,8 +42,5 @@
   <p>
   ・近くのスーパー（お気に入り登録）のお得情報を発信する。
   </p>
-  <ul>
-     <li><A href="https://github.com/Rakunchu">Githubのページ</A></li>
- </ul>
 </body>
 </html>
