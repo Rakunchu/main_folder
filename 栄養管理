@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img alt="ロゴ" src="new_logo.png" width="40%" height="40%">
+    <style media="screen">
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: none;
+        width: 100%;
+        border-style: solid;
+      }
+
+      li {
+        float: left;
+        border-right: 1px solid #bbb;
+      }
+
+      a{
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+      }
+
+      li a {
+        text-decoration: none;
+
+      }
+
+      li a:hover{
+        background-color: white;
+      }
+
+      h1{
+        text-align:center;
+      }
+
+      button{
+        background:green;
+        font-size: 30px;
+        border-radius:10px;
+        font-family: "Lucida Console", Courier, monospace;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/website_scaffold.html">ホーム</a></li>
+    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/diet_organizer.html">栄養管理</a></li>
+    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/fridge_organizer.html">冷蔵庫在庫管理</a></li>
+    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
+    <li><A href="https://github.com/Rakunchu">Githubのページ</A></li>
+    </ul>
+
+<form action='/action_page.php'>
+<h1>
+  <label for='age'>年齢</label>
+  <input type='text' id='age' name='age'></input><br><br>
+  <label for='gender'>性別</label>
+  <input type='text' id='gender' name='gender'></input><br><br>
+  <label for='height'>身長</label>
+  <input type='text' id='height' name='height'></input><br><br>
+  <label for='weight'>体重</label>
+  <input type='text' id='weight' name='weight'></input><br><br>
+  <button type="button" name="提出">提出</button>
+</h1>
+
+
+  </body>
+</html>
