@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="jp" dir="ltr">
   <head>
     <img alt="ロゴ" src="new_logo.png" width="20%" height="20%">
@@ -117,7 +117,7 @@
 
 
 <div class="add_food">
- <label for="food">食べ物を追加</label><br>
+ <label for="food">「在庫」に食材を追加</label><br>
  <input type="text">
 </div>
 
