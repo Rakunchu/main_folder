@@ -72,7 +72,7 @@
   <input type='text' id='height' name='height'></input><br><br>
   <label for='weight'>体重</label>
   <input type='text' id='weight' name='weight'></input><br><br>
-  <button type="button" name="提出">提出</button>
+  <button type="button" name="決定">決定</button>
 </h1>
 
 
