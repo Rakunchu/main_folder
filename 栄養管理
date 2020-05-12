@@ -64,6 +64,8 @@
 
 <form action='/action_page.php'>
 <h1>
+    <br>
+    <br>
   <label for='age'>年齢</label>
   <input type='text' id='age' name='age'></input><br><br>
   <label for='gender'>性別</label>
