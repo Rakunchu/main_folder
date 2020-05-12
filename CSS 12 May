@@ -1,0 +1,15 @@
+div.age {
+    display:inline-block;
+    text-align: center;
+    width:200px;
+    height:200px;
+    line-height: 80px;
+    margin:200px;
+    padding:20px;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background-color: skyblue;
+    border: dashed 10px #5b8bd0;/*点線*/
+    border-radius: 50%;/*角の丸み*/
+    font-size: 30px
+}
