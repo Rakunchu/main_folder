@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="jp" dir="ltr">
 <head>
-<img alt="ロゴ" src="rakunchu_web_logo.png" width=405 length=40%>
+<img alt="ロゴ" src="rakunchu_web_logo.png" width=20% length=20%>
 <!-- CSS line5-line48 -->
 <style>
 html{background-color: white;opacity: 1;}
