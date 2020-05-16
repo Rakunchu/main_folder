@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="jp" dir="ltr">
 <head>
-<img alt="ロゴ" src="rakunchu_web_logo.png" width=20% length=20%>
+<img alt="ロゴ" src="new_logo.png" width="40%" height="40%">
 <!-- CSS line5-line48 -->
 <style>
 html{background-color: white;opacity: 1;}
 
 body{color: black;}
 pre{text-align: left; font-size: 20px}
-h2{font-family: "Lucida Console", Courier, monospace;}
-h3{font-family: 'Impact', Charcoal, sans-serif;	text-align: center;}
 
 ul {
   list-style-type: none;
@@ -17,8 +15,10 @@ ul {
   padding: 0;
   overflow: hidden;
   background: none;
-  width: 1000px;
+  width: 100%;
+  border-style: solid;
 }
+
 
 img{
   display: block;
@@ -36,6 +36,9 @@ a{
   padding: 8px;
   background-color: #dddddd;
 }
+a:visited{color: forestgreen}
+	
+a:active{color: firebrick}
 li a {
   text-decoration: none;
 
@@ -47,6 +50,11 @@ li a:hover{
 
 h1{color: black;text-align: center; text-indent: 70px}
 
+h3.diet_organizer {color: green}
+h3.fridge_organizer {color: green}
+h3.fridge_suggester {color: green}
+h3.market_info {color: green}
+h3.waste_recorder {color: green}
 </style>
 
 <meta charset="utf-8">
@@ -59,13 +67,13 @@ h1{color: black;text-align: center; text-indent: 70px}
 <li><a href="file:///Users/shunaso/Desktop/Rakunchu/diet_organizer.html">栄養管理</a></li>
 <li><a href="file:///Users/shunaso/Desktop/Rakunchu/fridge_organizer.html">冷蔵庫在庫管理</a></li>
 <li><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
-<li><A href="https://github.com/Rakunchu">Githubのページ</A></li>
+<li><a href="https://github.com/Rakunchu">Githubのページ</a></li>
 </ul>
 <body>
 
 <h1>
 <br>
-私たちの願い…<br>
+私たちの願い…
 利用して頂いてる皆さんに、
 楽しく健康な人生を過ごしてもらうこと
 </h1>
@@ -73,30 +81,31 @@ h1{color: black;text-align: center; text-indent: 70px}
 <pre>
 そのために私たちがすること…
 
-<p2>
-・栄養管理をします。
+<p>
+
+<h3 class="diet_organizer">・栄養管理をします。</h3>
   　⇒年齢、性別、身長、体重を入力してください。
   　　⇒適切な摂取カロリー・栄養素を判別・計算します。
   　　　　⇒あなたの食生活が楽しく健康になるようにAIがサポートします！
 
-・冷蔵庫の中身を整理します。
+<h3 class="fridge_organizer">・冷蔵庫の中身を整理します。</h3>
   　⇒食品を購入した際に、その都度買ったもの・個数を入力してください。
   　　⇒賞味期限が近づいてきたら、アプリでお知らせします！
   　　　⇒冷蔵庫の奥から取り出して、いちいち賞味期限を確認する手間が省けられます！
 
-・冷蔵庫のやりくりをします。
+<h3 class="fridge_suggester">・冷蔵庫のやりくりをします。</h3>
   　⇒上記の食材をアプリが管理します。
   　　⇒好きな食事の種類、味の好み、健康意識を選択してください。
   　　　⇒残り物だけで作れる料理や、少しの買い出しで安く作れる料理をAIが提案します！
 
-・近くのスーパーのお得情報を発信します。
+<h3 class="market_info">・近くのスーパーのお得情報を発信します。</h3>
   　⇒あなたの家計を少しでも楽にします！
 
-・ゴミの削減量を記録します。
+<h3 class="waste_recorder">・ゴミの削減量を記録します。</h3>
   　⇒あなたが開始前と比べてどれだけゴミの削減に貢献したか分かります。
   　　⇒あなたの自治体のゴミ予算がどれだけ減らせるのか計算します。
       ⇒減った分の額や、使い道に関しても新たな提案をします！
-</p2>
+</p>
 
 </pre>
 </body>
