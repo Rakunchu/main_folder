@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img alt="ロゴ" src="rakunchu_web_logo.png" width="20%" height="20%">
+
+
+    <style media="screen">
+
+
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: none;
+        width: 100%;
+        border-style: solid;
+      }
+
+
+      li {
+        float: left;
+        border-right: 1px solid #bbb;
+      }
+
+      a{
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+      }
+
+      li a {
+        text-decoration: none;
+        list-style: none;
+
+      }
+
+      li a:hover{
+        background-color: white;
+      }
+
+      h1{
+        text-align:center;
+      }
+
+      button{
+        background:green;
+        font-size: 30px;
+        border-radius:10px;
+        font-family: "Lucida Console", Courier, monospace;
+      }
+      h1.見出し{
+        color:green;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="Rakunchu_sub_12_May.css">
+    <script src="Rakunchu-18-May-Nutrients.js"></script>
+  </head>
+
+
+
+
+  <body>
+
+    <ul>
+    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/website_scaffold.html">ホーム</a></li>
+    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/diet_organizer.html">栄養管理</a></li>
+    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/fridge_organizer.html" class="current">冷蔵庫在庫管理</a></li>
+    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
+    <li><a href="https://github.com/Rakunchu">Githubのページ</a></li>
+    </ul>
+
+    <br>
+
+
+    <div class="age">
+      <form action="" method="post">
+        <label>年齢(才)<br>
+          <select name="age_2">
+            <option value="1" selected>~2</option>
+            <option value="2" selected>3~5</option>
+            <option value="3" selected>6~8</option>
+            <option value="4" selected>9~11</option>
+            <option value="5" selected>12~14</option>
+            <option value="6" selected>15~17</option>
+            <option value="7" selected>18~29</option>
+            <option value="8" selected>30~49</option>
+            <option value="9" selected>50~69</option>
+            <option value="10" selected>70~</option>
+          </select>
+        </label>
+        <input type="submit">
+      </form>
+    </div>
+
+    <div class="sex">
+      <form action="" method="post">
+        <label>性別<br>
+          <select name="sexuarity">
+            <option value="1" selected>男</option>
+            <option value="2" selected>女</option>
+          </select>
+        </label>
+        <input type="submit">
+      </form>
+    </div>
+
+    <div class="height">
+      <form action="" method="post">
+        <label>
+          身長(cm)<br><input type="text" size="8" name="height_2">
+        </label>
+        <input type="submit">
+      </form>
+    </div>
+
+    <div class="weight">
+      <form action="" method="post">
+        <label>
+          体重(kg)<br><input type="text" size="8" name="weight_2">
+        </label>
+        <input type="submit">
+      </form>
+    </div>
+
+    <br>
+
+    <div class="protein">
+      <a href="" class="protein-js">タンパク質</a>
+    </div>
+
+    <div class="fat">
+          <a href="" class="fat-js">脂質</a>
+    </div>
+
+    <div class="carbonhydrate">
+        <a href="" class="carbonhydrate-js">炭水化物</a>
+    </div>
+
+    <div class="result">
+
+
+  </body>
+</html>
