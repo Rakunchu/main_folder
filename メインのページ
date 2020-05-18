@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="jp" dir="ltr">
 <head>
-<img alt="ロゴ" src="new_logo.png" width="40%" height="40%">
+<img class="logo" alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
 <!-- CSS line5-line48 -->
 <style>
 html{background-color: white;opacity: 1;}
@@ -20,10 +20,17 @@ ul {
 }
 
 
-img{
+img.logo{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+img.image-descriptor{
+  display: inline-block;
+  float: right;
+  width: 180px;
+  height: 180px;
 }
 
 li {
@@ -35,10 +42,10 @@ a{
   display: block;
   padding: 8px;
   background-color: #dddddd;
+  color: forestgreen;
 }
 a:visited{color: forestgreen}
-	
-a:active{color: firebrick}
+a:active{color: forestgreen}
 li a {
   text-decoration: none;
 
@@ -55,18 +62,92 @@ h3.fridge_organizer {color: green}
 h3.fridge_suggester {color: green}
 h3.market_info {color: green}
 h3.waste_recorder {color: green}
-</style>
 
+.box1{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.box2{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.box3{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.box4{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.box5{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.description{
+  float: left;
+  font-size: 30px;
+}
+
+</style>
+<script>
+
+</script>
 <meta charset="utf-8">
 <title>Rakunchu</title>
 <!-- <link rel="stylesheet" href="styles.css">
 <script src="app.js"></script> -->
 </head>
 <ul>
-<li><a href="file:///Users/shunaso/Desktop/Rakunchu/website_scaffold.html">ホーム</a></li>
-<li><a href="file:///Users/shunaso/Desktop/Rakunchu/diet_organizer.html">栄養管理</a></li>
-<li><a href="file:///Users/shunaso/Desktop/Rakunchu/fridge_organizer.html">冷蔵庫在庫管理</a></li>
+<li><a href="rakunchu.html">ホーム</a></li>
+<li><a href="栄養管理.html">栄養管理</a></li>
+<li><a href="冷蔵庫管理.html">冷蔵庫在庫管理</a></li>
 <li><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
+<li><a href="廃棄物.html">廃棄物</a></li>
 <li><a href="https://github.com/Rakunchu">Githubのページ</a></li>
 </ul>
 <body>
@@ -81,32 +162,37 @@ h3.waste_recorder {color: green}
 <pre>
 そのために私たちがすること…
 
-<p>
-
-<h3 class="diet_organizer">・栄養管理をします。</h3>
-  　⇒年齢、性別、身長、体重を入力してください。
+<div class="box1">栄養管理</div>
+<img class="image-descriptor"alt="ロゴ" src="dietimage.png">
+  　<div class="description">⇒年齢、性別、身長、体重を入力してください。
   　　⇒適切な摂取カロリー・栄養素を判別・計算します。
   　　　　⇒あなたの食生活が楽しく健康になるようにAIがサポートします！
+</div>
 
-<h3 class="fridge_organizer">・冷蔵庫の中身を整理します。</h3>
-  　⇒食品を購入した際に、その都度買ったもの・個数を入力してください。
+<div class="box2">冷蔵庫の中身の管理</div>
+<img class="image-descriptor" alt="ロゴ" src="fridge.png">
+  　<div class="description">⇒食品を購入した際に、その都度買ったもの・個数を入力してください。
   　　⇒賞味期限が近づいてきたら、アプリでお知らせします！
   　　　⇒冷蔵庫の奥から取り出して、いちいち賞味期限を確認する手間が省けられます！
 
-<h3 class="fridge_suggester">・冷蔵庫のやりくりをします。</h3>
-  　⇒上記の食材をアプリが管理します。
+</div>
+
+<div class="box3">料理の提案</div>
+<img class="image-descriptor" alt="ロゴ" src="mealsuggestion.png">
+  　<div class="description">⇒上記の食材をアプリが管理します。
   　　⇒好きな食事の種類、味の好み、健康意識を選択してください。
-  　　　⇒残り物だけで作れる料理や、少しの買い出しで安く作れる料理をAIが提案します！
+  　　　⇒残り物だけで作れる料理や、少しの買い出しで安く作れる料理を
+        AIが提案します！
+</div>
 
-<h3 class="market_info">・近くのスーパーのお得情報を発信します。</h3>
-  　⇒あなたの家計を少しでも楽にします！
+<div class="box4">スーパーの情報</div>
+<img class="image-descriptor" alt="ロゴ" src="supermarket.png">
+  　<div class="description">⇒あなたの家計を少しでも楽にします！
+</div>
 
-<h3 class="waste_recorder">・ゴミの削減量を記録します。</h3>
-  　⇒あなたが開始前と比べてどれだけゴミの削減に貢献したか分かります。
+<div class="box5">廃棄物の削減</div>
+<img class="image-descriptor" alt="ロゴ" src="waste.png">
+  　<div class="description">⇒あなたが開始前と比べてどれだけゴミの削減に貢献したか分かります。
   　　⇒あなたの自治体のゴミ予算がどれだけ減らせるのか計算します。
       ⇒減った分の額や、使い道に関しても新たな提案をします！
-</p>
-
-</pre>
-</body>
-</html>
+</div>
