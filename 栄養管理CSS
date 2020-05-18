@@ -1,0 +1,38 @@
+.sex, .weight, .height, .age{
+    display:inline-block;
+    text-align: center;
+    width:250px;
+    height:150px;
+    line-height: 75px;
+    margin:30px;
+    margin-top: 0px;
+    padding:20px;
+    font-weight: normal;
+    color: rgb(57,174,243);
+    background-color: rgba(246,233,45,0.15);
+    border: dashed 4px #5b8bd0;/*点線*/
+    border-color: rgb(250,131,31);
+    border-radius: 0%;/*角の丸み*/
+    font-size: 30px
+}
+
+
+.fat, .carbonhydrate, .protein{
+    display:inline-block;
+    text-align: center;
+    width:140px;
+    height:140px;
+    line-height:130px;
+    margin:30px;
+    padding:20px;
+    font-weight: normal;
+    color: black;
+    background-color: yellowgreen;
+    border: dashed 7px #5b8bd0;/*点線*/
+    border-radius: 40%;/*角の丸み*/
+    font-size: 18px
+  }
+
+.protein-js, .fat-js, .carbonhydrate-js{
+  background-color: yellowgreen;
+}
