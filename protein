@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img alt="ロゴ" src="rakunchu_web_logo.png" width="20%" height="20%">
+    <style media="screen">
+
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: none;
+    width: 100%;
+    border-style: solid;
+}
+
+h1{
+    text-align: center;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+a{
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+li a {
+    text-decoration: none;
+}
+
+td{
+    text-align: center;
+}
+
+
+
+
+
+    </style>
+    <link rel="stylesheet" href="Rakunchu-Protein-1-June.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script>
+    <p
+    </script>
+
+    <meta charset="utf-8">
+    <title></title>
+
+
+  </head>
+  <body>
+    <ul>
+    <li><a href="rakunchu.html">ホーム</a></li>
+    <li><a href="栄養管理.html">栄養管理</a></li>
+    <li><a href="冷蔵庫管理.html">冷蔵庫在庫管理</a></li>
+    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
+    <li><a href="廃棄物.html">廃棄物</a></li>
+    <li><A href="https://github.com/Rakunchu">Githubのページ</A></li>
+    </ul>
+
+<h1>タンパク質</h1>
+
+<div class="information-of-protein">
+  <span class="name-of-protein">タンパク質</span>
+  
+
+  <div class="proteinchartno1">
+
+  <canvas id="ProteinChart1"></canvas>
+
+  <script>
+  var ctx = document.getElementById("ProteinChart1");
+  var ProteinChart1= new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["摂取済み", "未摂取"],
+      datasets: [{
+          backgroundColor: [
+              "#c97586",
+              "#bbbcde",
+          ],
+          data: [60, 40],
+
+      }]
+    },
+
+    options: {
+      title: {
+        display: true,
+        //グラフタイトル
+        text: '今日の摂取の目安'
+      }
+      // 'width':550, 'height':300
+    }
+  });
+  </script>
+
+  </div>
+
+  <div class="proteinchartno2">
+
+  <canvas id="ProteinChart2"></canvas>
+
+  <script>
+  var ctx = document.getElementById("ProteinChart2");
+  var ProteinChart2= new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["摂取済み", "未摂取"],
+      datasets: [{
+          backgroundColor: [
+              "#c97586",
+              "#bbbcde",
+          ],
+          data: [60, 40],
+
+      }]
+    },
+
+    options: {
+      title: {
+        display: true,
+      //グラフタイトル
+        text: '今週の摂取の目安'
+      }
+    // 'width':550, 'height':300
+    }
+  });
+  </script>
+
+  </div>
+
+  <div class="proteinchartno3">
+
+  <canvas id="ProteinChart3"></canvas>
+
+  <script>
+  var ctx = document.getElementById("ProteinChart3");
+  var ProteinChart3= new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["摂取済み", "未摂取"],
+      datasets: [{
+          backgroundColor: [
+              "#c97586",
+              "#bbbcde",
+          ],
+          data: [60, 40],
+
+      }]
+    },
+
+    options: {
+      title: {
+        display: true,
+      //グラフタイトル
+        text: '今月の摂取の目安'
+      }
+    // 'width':550, 'height':300
+    }
+  });
+  </script>
+
+  </div>
+
+
+  <p></p>
+</div>
+
+
+  </body>
+</html>
