@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
+    <style media="screen">
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      ul.navigation_bar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: none;
+        width: 100%;
+        border-style: solid;
+
+      }
+
+      li.link {
+        float: left;
+        border-right: 1px solid #bbb;
+
+      }
+
+      a{
+        display: inline-block;
+        padding: 8px;
+        background-color: #dddddd;
+      }
+
+	a:visited{color: forestgreen}
+
+	a:active{color: firebrick}
+
+
+      li a {
+        text-decoration: none;
+      }
+
+	.stock{
+      display:block;
+      border: 5px solid black;
+      width: 100%;
+      float: left;
+      height: auto;
+	}
+		
+		
+		div.vegetables{
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		border: 3px solid green;
+		margin: 3px;
+    width: auto;
+    height: auto;
+	}
+
+	div.meatandfish{
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		border: 3px solid brown;
+		margin: 3px;
+    height: 130px;
+    width: auto;
+    height: auto;
+	}
+
+	div.others{
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		border: 3px solid gray;
+		margin: 3px;
+    text-decoration: none;
+    height: auto;
+    width: auto;
+		}
+
+
+
+    div.vegeitem
+    {
+	  
+      float: left;
+      border: 3px solid forestgreen;
+      height: 60px;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+	  background-color: white;
+    }
+
+    div.meatandfishitem
+    {
+      float: left;
+      border: 3px solid brown;
+      height: 60px;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+	   background-color: white;
+    }
+
+    div.othersitem
+    {
+      float: left;
+      border: 3px solid gray;
+      height: 60px;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+	   background-color: white;
+    }
+
+		h1{ 
+		 text-align: center;
+			color: coral;
+		}
+		
+		.search{ 
+		border: 5px groove black;
+		border-radius: 30px;
+		text-align: center;
+		width: 50%;
+		height: auto;
+		font-size: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		}
+		
+		.search:hover{
+			background-color: coral;
+		}
+		
+		.return{
+		border: 5px groove black;
+		border-radius: 30px;
+		text-align: center;
+		width: 20%;
+		height: 70px;
+		font-size: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		}
+		
+		.return:hover{
+			background-color: coral;
+		}
+		
+		
+  </style>
+	  </head>
+<body>
+
+    <ul class="navigation_bar">
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/website_scaffold.html">ホーム</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/diet_organizer.html">栄養管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/fridge_organizer.html" class="current">冷蔵庫在庫管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
+    <li class="link"><a href="https://github.com/Rakunchu">Githubのページ</a></li>
+    </ul>
+<h1>食材を選んでください</h1>
+	
+<div class="stock">
+	<h2>在庫</h2>
+	 <div class="vegetables">
+     野菜<br>
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム1</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム2</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム3</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム4</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム5</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム6</div >
+     <div class="vegeitem" onClick = "selecting(this)">アイテム7</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム8</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム9</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム10</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム11</div >
+
+   </div>
+	<div class="meatandfish">
+    肉と魚<br>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム1</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム2</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム3</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム4</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム5</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム6</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム7</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム8</div>
+    <div class="meatandfishitem" onClick = "selecting(this)" >アイテム9</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム10</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム11</div>
+  </div>
+	<div class="others">
+    その他<br>
+    <div class="othersitem" onClick = "selecting(this)">アイテム1</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム2</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム3</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム4</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム5</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム6</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム7</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム8</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム9</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム10</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム11</div>
+  </div>
+	
+	<div class="search">検索</div>
+</div>
+	<a href="fridge_organizer.html" class="return">戻る</a>
+
+
+<script>
+	function selecting (item){ 
+		if (item.style.backgroundColor === "coral"){
+			item.style.backgroundColor = "white";
+		}else{ 
+			item.style.backgroundColor = "coral";
+			
+		}
+	}
+</script>
+
+
+</body>
+
+   
+
+</html>
