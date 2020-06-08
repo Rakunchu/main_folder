@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
+    <style media="screen">
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      ul.navigation_bar {
+        list-style-type: none;border: 5px solid black;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: none;
+        width: 100%;
+        border-style: solid;
+
+      }
+
+      li.link {
+        float: left;
+        border-right: 1px solid #bbb;
+
+      }
+
+      a{
+        display: inline-block;
+        padding: 8px;
+        background-color: #dddddd;
+      }
+
+	a:visited{color: forestgreen}
+
+	a:active{color: firebrick}
+
+
+      li a {
+        text-decoration: none;
+      }
+
+  .genre{
+    border: 5px groove black;
+    border-radius: 30px;
+    text-align: center;
+    width: 30%;
+    height: auto;
+    font-size: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+  }
+		
+		.genre:hover{ 
+			background-color: coral;
+		}
+		h1{ 
+		 text-align: center;
+			color: coral;
+		}
+		
+		.return{
+		border: 5px groove black;
+		border-radius: 30px;
+		text-align: center;
+		width: 20%;
+		height: 70px;
+		font-size: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		}
+		
+		.return:hover{
+			background-color: coral;
+		}
+  </style>
+	  </head>
+<body>
+
+    <ul class="navigation_bar">
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/website_scaffold.html">ホーム</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/diet_organizer.html">栄養管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/fridge_organizer.html" class="current">冷蔵庫在庫管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
+    <li class="link"><a href="https://github.com/Rakunchu">Githubのページ</a></li>
+    </ul>
+<h1>ジャンルから選ぶ</h1>
+<div class="genre" id="一品料理">
+一品料理
+</div>
+<div class="genre" id="デザート">
+  デザート
+</div>
+<div class="genre" id="おかず">
+  おかず
+</div>
+<div class="genre" id="汁物">
+  汁物
+</div>
+<div class="genre" id="飲み物">
+  飲み物
+</div>
+	
+<a href="fridge_organizer.html" class="return">戻る</a>
+
+
+
+
+
+  </body>
+
+</html>
