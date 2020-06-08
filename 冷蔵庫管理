@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="jp" dir="ltr">
   <head>
-    <img alt="ロゴ" src="new_logo.png" width="20%" height="20%">
+    <img alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
     <style media="screen">
       img{
         display: block;
@@ -9,7 +9,7 @@
         margin-right: auto;
       }
 
-      ul {
+      ul.navigation_bar {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -20,7 +20,7 @@
 
       }
 
-      li {
+      li.link {
         float: left;
         border-right: 1px solid #bbb;
 
@@ -51,6 +51,10 @@
         text-align:center;
       }
 
+		h2{
+			margin: 0px;
+		}
+
       button{
         background:green;
         font-size: 30px;
@@ -62,82 +66,253 @@
         color:green;
       }
 
+
 		.current{
 			background-color: orange;
 		}
 		.add_food{
+      display:block;
       border: 5px solid gray;
-			margin-top: 1%;
 			padding-bottom: 1.5%;
 			width: 30%;
 		}
 		.stock{
-      border: 5px solid gray;
-			margin-top: 1%;
-			padding-bottom: 30%;
+      display:block;
+      border: 5px solid black;
       width: 48%;
       float: left;
+      height: auto;
 		}
 
 
 		.history{
-    border: 5px solid gray;
-    margin-top: 1%;
-    padding-bottom: 30%;
+    display:block;
+    border: 5px solid black;
     margin-left: 2px;
-		width: 20%;
     float: left;
+    width: 20%;
+    height: 460px;
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
 		}
+
     .expire_soon{
+      display:block;
       border: 5px solid gray;
-      margin-top: 1%;
-      padding-bottom: 30%;
       margin-left: 2px;
       width: 29%;
       float: left;
     }
-    .suggestions{
+    .残り物{
+      display: block;
       border: 5px solid gray;
-      margin-top: 1%;
-      padding-bottom: 10%;
       width: 100%;
       float: left;
+
     }
+
+	div.vegetables{
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		border: 3px solid green;
+		margin: 3px;
+    width: auto;
+    height: 130px;
+	}
+
+	div.meatandfish{
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		border: 3px solid brown;
+		margin: 3px;
+    height: 130px;
+    width: auto;
+    height: 130px;
+	}
+
+	div.others{
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		border: 3px solid gray;
+		margin: 3px;
+    text-decoration: none;
+    height: 130px;
+    width: auto;
+		}
+
+    .class{
+      border: 3px solid green;
+  		margin: 3px;
+      text-decoration: none;
+      float: left;
+    }
+
+
+
+    a.vegeitem
+    {
+      float: left;
+      border: 3px solid forestgreen;
+      height: 60px;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+    }
+
+    a.meatandfishitem
+    {
+      float: left;
+      border: 3px solid brown;
+      height: 60px;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+    }
+
+    a.othersitem
+    {
+      float: left;
+      border: 3px solid gray;
+      height: 60px;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+    }
+
+    a.recent{
+      float: left;
+      border: 3px solid gray;
+      height: 60px;
+      width: auto;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+    }
+
+
+
+    #suggestions{
+        border: 3px solid gray;
+        border-radius: 15px;
+        height: auto;
+        width: auto;
+        float: left;
+        margin: 10px;
+        padding: 10px;
+		text-decoration: none;
+		color: gray;
+          }
+	#suggestions:hover{
+			background-color: coral;
+	}
+
+
     </style>
 	  </head>
 <body>
 
-    <ul>
-    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/website_scaffold.html">ホーム</a></li>
-    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/diet_organizer.html">栄養管理</a></li>
-    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/fridge_organizer.html" class="current">冷蔵庫在庫管理</a></li>
-    <li><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
-    <li><a href="https://github.com/Rakunchu">Githubのページ</a></li>
+    <ul class="navigation_bar">
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/website_scaffold.html">ホーム</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/diet_organizer.html">栄養管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/fridge_organizer.html" class="current">冷蔵庫在庫管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
+    <li class="link"><a href="https://github.com/Rakunchu">Githubのページ</a></li>
     </ul>
 
 
 <div class="add_food">
- <label for="food">「在庫」に食材を追加</label><br>
+ <label for="food"><h2>食べ物を追加</h2></label><br>
  <input type="text">
 </div>
 
 <div class="stock">
-	在庫
+	<h2>在庫</h2>
+	 <div class="vegetables">
+     野菜<br>
+     <a class="vegeitem" href="">アイテム1</a>
+     <a class="vegeitem" href="">アイテム2</a>
+     <a class="vegeitem" href="">アイテム3</a>
+     <a class="vegeitem" href="">アイテム4</a>
+     <a class="vegeitem" href="">アイテム5</a>
+     <a class="vegeitem" href="">アイテム6</a>
+     <a class="vegeitem" href="">アイテム7</a>
+     <a class="vegeitem" href="">アイテム8</a>
+     <a class="vegeitem" href="">アイテム9</a>
+     <a class="vegeitem" href="">アイテム10</a>
+     <a class="vegeitem" href="">アイテム11</a>
+
+   </div>
+	<div class="meatandfish">
+    肉と魚<br>
+    <a class="meatandfishitem" href="">アイテム1</a>
+    <a class="meatandfishitem" href="">アイテム2</a>
+    <a class="meatandfishitem" href="">アイテム3</a>
+    <a class="meatandfishitem" href="">アイテム4</a>
+    <a class="meatandfishitem" href="">アイテム5</a>
+    <a class="meatandfishitem" href="">アイテム6</a>
+    <a class="meatandfishitem" href="">アイテム7</a>
+    <a class="meatandfishitem" href="">アイテム8</a>
+    <a class="meatandfishitem" href="">アイテム9</a>
+    <a class="meatandfishitem" href="">アイテム10</a>
+    <a class="meatandfishitem" href="">アイテム11</a>
+  </div>
+	<div class="others">
+    その他<br>
+    <a class="othersitem" href="">アイテム1</a>
+    <a class="othersitem" href="">アイテム2</a>
+    <a class="othersitem" href="">アイテム3</a>
+    <a class="othersitem" href="">アイテム4</a>
+    <a class="othersitem" href="">アイテム5</a>
+    <a class="othersitem" href="">アイテム6</a>
+    <a class="othersitem" href="">アイテム7</a>
+    <a class="othersitem" href="">アイテム8</a>
+    <a class="othersitem" href="">アイテム9</a>
+    <a class="othersitem" href="">アイテム10</a>
+    <a class="othersitem" href="">アイテム11</a>
+  </div>
 </div>
 
 <div class="history">
-履歴
+<h2>履歴</h2>
+<a class="recent" href="">アイテム1</a>
+<a class="recent" href="">アイテム2</a>
+<a class="recent" href="">アイテム3</a>
+<a class="recent" href="">アイテム4</a>
+<a class="recent" href="">アイテム5</a>
+<a class="recent" href="">アイテム6</a>
+<a class="recent" href="">アイテム7</a>
+<a class="recent" href="">アイテム8</a>
+<a class="recent" href="">アイテム9</a>
+<a class="recent" href="">アイテム10</a>
+<a class="recent" href="">アイテム11</a>
 </div>
 
 <div class="expire_soon">
-あと5日以内に消費してください
+<h2>あと5日以内に消費してください</h2>
 </div>
 
-<div class="suggestions">
- 残り物で作れるもの
+<div class="残り物">
+ <h2>残り物で作れるもの</h2>
+    <a href="ジャンルから選ぶ.html" id="suggestions">ジャンルから選ぶ</a>
+    <a href="使いたい食材から選ぶ.html" id="suggestions">使いたい食材から選ぶ</a>
+    <a href="カロリーから選ぶ.html" id="suggestions">カロリーから選ぶ</a>
 </div>
+
 
 
 
   </body>
+
 </html>
