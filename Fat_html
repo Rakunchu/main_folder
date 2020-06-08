@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img alt="ロゴ" src="rakunchu_web_logo.png" width="20%" height="20%">
+    <style media="screen">
+
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: none;
+    width: 100%;
+    border-style: solid;
+}
+
+h1{
+    text-align: center;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+a{
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+li a {
+    text-decoration: none;
+}
+
+td{
+    text-align: center;
+}
+
+
+
+
+
+    </style>
+    <link rel="stylesheet" href="Rakunchu-8-June-Fat.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script>
+    <p
+    </script>
+
+    <meta charset="utf-8">
+    <title></title>
+
+
+  </head>
+  <body>
+    <ul>
+    <li><a href="file:///C:/Users/%E9%87%8E%E5%AF%BA%E5%A4%A7%E6%99%BA/Downloads/%E6%96%B0%E3%81%97%E3%81%84%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%83%BC/Rakunchu-21-May-Mainpage.html">ホーム</a></li>
+    <li><a href="file:///C:/Users/%E9%87%8E%E5%AF%BA%E5%A4%A7%E6%99%BA/Downloads/%E6%96%B0%E3%81%97%E3%81%84%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%83%BC/Rakunchu-2-June-Nutrients.html">栄養管理</a></li>
+    <li><a href="file:///C:/Users/%E9%87%8E%E5%AF%BA%E5%A4%A7%E6%99%BA/Downloads/%E6%96%B0%E3%81%97%E3%81%84%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%83%BC/Rakunchu-21-May-fridge.html">冷蔵庫在庫管理</a></li>
+    <li><a href="file:///C:/Users/%E9%87%8E%E5%AF%BA%E5%A4%A7%E6%99%BA/Downloads/%E6%96%B0%E3%81%97%E3%81%84%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%83%BC/Rakunchu-29-May-supermarket.html#">スーパー情報</a></li>
+    <li><a href="file:///C:/Users/%E9%87%8E%E5%AF%BA%E5%A4%A7%E6%99%BA/Downloads/%E6%96%B0%E3%81%97%E3%81%84%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%83%BC/Rakunchu-19-May-Haikibutsu.html">廃棄物</a></li>
+    <li><A href="https://github.com/Rakunchu">Githubのページ</A></li>
+    </ul>
+
+<h1>脂質</h1>
+
+<div class="information-of-fat">
+  <span class="name-of-fat">脂質</span>
+  <!-- <div id="piechart"></div> -->
+
+  <!-- <script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  // Draw the chart and set the chart values
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['Work', 8],
+    ['Friends', 2],
+    ['Eat', 2],
+    ['TV', 2],
+    ['Gym', 2],
+    ['Sleep', 8]
+  ]);
+
+    // Optional; add a title and set the width and height of the chart
+    var options = {'title':'My Average Day', 'width':550, 'height':300};
+
+    // Display the chart inside the <div> element with id="piechart"
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    chart.draw(data, options);
+  }
+  </script> -->
+
+  <div class="fatchartno1">
+
+  <canvas id="FatChart1"></canvas>
+
+  <script>
+  var ctx = document.getElementById("FatChart1");
+  var FatChart1= new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["摂取済み", "未摂取"],
+      datasets: [{
+          backgroundColor: [
+              "#c97586",
+              "#bbbcde",
+          ],
+          data: [60, 40],
+
+      }]
+    },
+
+    options: {
+      title: {
+        display: true,
+        //グラフタイトル
+        text: '今日の摂取の目安'
+      }
+      // 'width':550, 'height':300
+    }
+  });
+  </script>
+
+  </div>
+
+  <div class="fatchartno2">
+
+  <canvas id="FatChart2"></canvas>
+
+  <script>
+  var ctx = document.getElementById("FatChart2");
+  var FatChart2= new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["摂取済み", "未摂取"],
+      datasets: [{
+          backgroundColor: [
+              "#c97586",
+              "#bbbcde",
+          ],
+          data: [60, 40],
+
+      }]
+    },
+
+    options: {
+      title: {
+        display: true,
+      //グラフタイトル
+        text: '今週の摂取の目安'
+      }
+    // 'width':550, 'height':300
+    }
+  });
+  </script>
+
+  </div>
+
+  <div class="fatchartno3">
+
+  <canvas id="FatChart3"></canvas>
+
+  <script>
+  var ctx = document.getElementById("FatChart3");
+  var FatChart3= new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["摂取済み", "未摂取"],
+      datasets: [{
+          backgroundColor: [
+              "#c97586",
+              "#bbbcde",
+          ],
+          data: [60, 40],
+
+      }]
+    },
+
+    options: {
+      title: {
+        display: true,
+      //グラフタイトル
+        text: '今月の摂取の目安'
+      }
+    // 'width':550, 'height':300
+    }
+  });
+  </script>
+
+  </div>
+
+
+  <p></p>
+</div>
+
+
+  </body>
+</html>
