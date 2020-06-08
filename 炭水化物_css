@@ -1,0 +1,44 @@
+.information-of-carbohydrate {
+    position: relative;
+    width: 90%;
+    height: 650px;
+    margin: 5%;
+    padding: 1%;
+    border: solid 3px #62c1ce;
+}
+
+ .name-of-carbohydrate {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 10px;
+    height: 25px;
+    font-size: 17px;
+    background: #62c1ce;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.information-of-carbohydrate p {
+    margin: 0;
+    padding: 0;
+}
+
+.piechart{
+  width: 30%;
+  height: auto;
+}
+
+.myDoughnutChart{
+  width: 100px;
+  height: auto;
+}
+
+.carbohydratechartno1, .carbohydratechartno2, .carbohydratechartno3, .CarbohydrateChart1, .CarbohydrateChart2, .CarbohydrateChart3{
+  width:32%;
+  height:600px;
+  margin-left: 1%;
+  margin-top: 1%;
+  float: left;
+}
