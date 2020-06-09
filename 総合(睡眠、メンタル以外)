@@ -1,0 +1,2028 @@
+file name: rakunchu.html
+
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+<head>
+<img class="logo" alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
+<!-- CSS line5-line48 -->
+<style>
+html{background-color: white;opacity: 1;}
+
+body{color: black;}
+pre{text-align: left; font-size: 20px}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: none;
+  width: 100%;
+  border-style: solid;
+}
+
+
+img.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.image-descriptor{
+  display: inline-block;
+  float: right;
+  width: 180px;
+  height: 180px;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+a{
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  color: forestgreen;
+}
+a:visited{color: forestgreen}
+a:active{color: forestgreen}
+li a {
+  text-decoration: none;
+
+}
+
+li a:hover{
+  background-color: white;
+}
+
+h1{color: black;text-align: center; text-indent: 70px}
+
+h3.diet_organizer {color: black}
+h3.fridge_organizer {color: black}
+h3.fridge_suggester {color: black}
+h3.market_info {color: black}
+h3.waste_recorder {color: black}
+
+.box1{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.box2{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.box3{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.box4{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.box5{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.description{
+  float: left;
+  font-size: 30px;
+}
+
+.btn-flat-dashed-filled1 {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border: dashed 2px black;
+  background: green;
+  border-radius: 3px;
+  transition: .4s;
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%;
+  height: 20%;
+}
+
+.btn-flat-dashed-filled1:hover {
+  background: #cbedff;
+  color: #FFF;
+}
+
+.btn-flat-dashed-filled2 {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border: dashed 2px black;
+  background: green;
+  border-radius: 3px;
+  transition: .4s;
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%;
+  height: 20%;
+}
+
+.btn-flat-dashed-filled2:hover {
+  background: #cbedff;
+  color: #FFF;
+}
+
+</style>
+<script>
+
+</script>
+<meta charset="utf-8">
+<title>Rakunchu</title>
+<!-- <link rel="stylesheet" href="styles.css">
+<script src="app.js"></script> -->
+</head>
+<body>
+
+<h1>
+<br>
+私たちの願い…
+利用して頂いてる皆さんに、
+楽しく健康な人生を過ごしてもらうこと
+</h1>
+
+<a href="スタート.html" class="btn-flat-dashed-filled1">始めるならこちら</a>
+
+<pre>
+そのために私たちがすること…
+
+<div class="box1">栄養管理</div>
+<img class="image-descriptor" alt="ロゴ" src="dietimage.png">
+  　<div class="description">⇒年齢、性別、身長、体重を入力してください。
+  　　⇒適切な摂取カロリー・栄養素を判別・計算します。
+  　　　　⇒あなたの食生活が楽しく健康になるようにAIがサポートします！
+</div>
+
+<div class="box2">冷蔵庫の中身の管理</div>
+<img class="image-descriptor" alt="ロゴ" src="fridge.png">
+  　<div class="description">⇒食品を購入した際に、その都度買ったもの・個数を入力してください。
+  　　⇒賞味期限が近づいてきたら、アプリでお知らせします！
+  　　　⇒冷蔵庫の奥から取り出して、いちいち賞味期限を確認する手間が省けられます！
+
+</div>
+
+<div class="box3">料理の提案</div>
+<img class="image-descriptor" alt="ロゴ" src="mealsuggestion.png">
+  　<div class="description">⇒上記の食材をアプリが管理します。
+    ⇒好きな食事の種類、味の好み、健康意識を選択してください。
+  　　⇒残り物だけで作れる料理や、少しの買い出しで安く作れる料理をAIが提案します！
+</div>
+
+<div class="box4">スーパーの情報</div>
+<img class="image-descriptor" alt="ロゴ" src="supermarket.png">
+  　<div class="description">⇒あなたの家計を少しでも楽にします！
+</div>
+
+<div class="box5">廃棄物の削減</div>
+<img class="image-descriptor" alt="ロゴ" src="waste.png">
+  　<div class="description">⇒あなたが開始前と比べてどれだけゴミの削減に貢献したか分かります。
+  　　⇒あなたの自治体のゴミ予算がどれだけ減らせるのか計算します。
+      ⇒減った分の額や、使い道に関しても新たな提案をします！
+</div>
+
+<a href="始める.html" class="btn-flat-dashed-filled2">始めるならこちら</a>
+
+
+
+
+
+
+
+
+
+
+
+file name: スタート.html
+
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img href="rakunchu.html" alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
+    <style media="screen">
+.sex, .weight, .height, .age{
+    margin-top: 1%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    margin-left: 1%;
+    width: 12%;
+    float: left;
+    font-weight: normal;
+    color: rgb(57,174,243);
+    background-color: rgba(246,233,45,0.15);
+    border: dashed 4px #5b8bd0;/*点線*/
+    border-color: rgb(250,131,31);
+    border-radius: 0%;/*角の丸み*/
+    font-size: 30px
+}
+
+
+.fat, .carbonhydrate, .protein{
+    margin-top: 1%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    margin-left: 2%;
+    width: 8%;
+    height == "width";
+    float: left;
+    font-weight: normal;
+    color: black;
+    background-color: rgba(77, 229, 77, 0.35);
+    border: solid 8px #5b8bd0;/*点線*/
+    border-radius: 10%;/*角の丸み*/
+    font-size: 18px
+  }
+
+.setting {
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  padding-top: 2%;
+  padding-left: 2%;
+  margin-left: 1%;
+  width: 34%;
+  height: 400px;
+  float: left;
+  font-weight: normal;
+  font-weight: bold;
+  color: rgb(0,0,0);
+  background-color: rgba(230,230,230,0.5);
+  border: solid 4px #5b8bd0;/*点線*/
+  border-color: rgb(0,0,0);
+  border-radius: 0%;/*角の丸み*/
+  font-size: 30px
+}
+
+.setting-viewer {
+  margin-top: 1%;
+  margin-right: 1%;
+  padding-top: 2%;
+  padding-left: 2%;
+  margin-left: 1%;
+  width: 85%;
+  height: 230px;
+  float: left;
+  font-weight: normal;
+  color: rgb(0,0,0);
+  background-color: rgba(230,230,230,0.75);
+  border: solid 2px #5b8bd0;/*点線*/
+  border-color: rgb(0,0,0);
+  border-radius: 0%;/*角の丸み*/
+  font-size: 20px
+}
+
+.dotline{
+  border-top: 6px dotted;
+  width: 100%;
+}
+
+.days-remained{
+  margin-top: 1%;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  margin-left: 2%;
+  width: 20%;
+  height: 20%;
+  float: left;
+  font-weight: normal;
+  color: orange;
+  background-color: rgba(77, 229, 77, 0.35);
+  border: solid 8px #5b8bd0;/*点線*/
+  border-radius: 10%;/*角の丸み*/
+  font-size: 30px
+}
+
+.protein-js, .fat-js, .carbonhydrate-js{
+  background-color: rgba(77, 229, 77, 0.35);
+  border-radius: 10%;
+  text-align: center;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: none;
+  width: 100%;
+  border-style: solid;
+}
+
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+
+}
+
+a{
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+li a {
+  text-decoration: none;
+  list-style: none;
+
+}
+
+li a:hover{
+  background-color: white;
+}
+
+h1{
+  text-align:center;
+}
+
+button{
+  background:green;
+  font-size: 30px;
+  border-radius:10px;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+h1.見出し{
+  color:green;
+}
+
+      </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<nobr><h1>始める前に</h1></nobr>
+<form action='/action_page.php'>
+<h1>
+    <br>
+    <br>
+  <label for='age'>年齢</label>
+  <input type='text' id='age' name='age'></input><br><br>
+  <label for='gender'>性別</label>
+  <input type='text' id='gender' name='gender'></input><br><br>
+  <label for='height'>身長</label>
+  <input type='text' id='height' name='height'></input><br><br>
+  <label for='weight'>体重</label>
+  <input type='text' id='weight' name='weight'></input><br><br>
+  <button href="ホーム.html" type="button" name="決定">決定</button>
+</h1>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+file name: ホーム.html
+
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+<head>
+<img class="logo" alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
+<!-- CSS line5-line48 -->
+<style>
+html{background-color: white;opacity: 1;}
+
+body{color: black;}
+pre{text-align: left; font-size: 20px}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: none;
+  width: 100%;
+  border-style: solid;
+}
+
+
+img.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.image-descriptor{
+  display: inline-block;
+  float: right;
+  width: 180px;
+  height: 180px;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+a{
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  color: forestgreen;
+}
+a:visited{color: forestgreen}
+a:active{color: forestgreen}
+li a {
+  text-decoration: none;
+
+}
+
+li a:hover{
+  background-color: white;
+}
+
+h1{color: black;text-align: center; text-indent: 70px}
+
+h3.diet_organizer {color: black}
+h3.fridge_organizer {color: black}
+h3.fridge_suggester {color: black}
+h3.market_info {color: black}
+h3.waste_recorder {color: black}
+
+.box1{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.box2{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.box3{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.box4{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.box5{
+    padding: 10px 10px;
+    margin: 0em 0;
+    color: green;
+    text-align: center;
+    background: white;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    width: 100%;
+    height: 10%;
+    float: left;
+}
+
+.description{
+  float: left;
+  font-size: 30px;
+}
+
+.btn-flat-dashed-filled1 {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: black;
+  border: dashed 2px black;
+  background: green;
+  border-radius: 3px;
+  transition: .4s;
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%;
+  height: 20%;
+}
+
+.btn-flat-dashed-filled1:hover {
+  background: #cbedff;
+  color: #FFF;
+}
+
+</style>
+<script>
+
+</script>
+<meta charset="utf-8">
+<title>Rakunchu</title>
+<!-- <link rel="stylesheet" href="styles.css">
+<script src="app.js"></script> -->
+</head>
+<body>
+    <ul>
+    <li><a href="ホーム.html">ホーム</a></li>
+    <li><a href="栄養管理.html">栄養管理</a></li>
+    <li><a href="冷蔵庫管理.html">冷蔵庫在庫管理</a></li>
+    <li><a href="スーパー情報.html">スーパー情報</a></li>
+    <li><a href="廃棄物.html">廃棄物</a></li>
+    </ul>
+<h1>
+<br>
+私たちの願い…
+利用して頂いてる皆さんに、
+楽しく健康な人生を過ごしてもらうこと
+</h1>
+<pre>
+そのために私たちがすること…
+
+<div class="box1">栄養管理</div>
+<img class="image-descriptor" alt="ロゴ" src="dietimage.png">
+  　<div class="description">⇒年齢、性別、身長、体重を入力してください。
+  　　⇒適切な摂取カロリー・栄養素を判別・計算します。
+  　　　　⇒あなたの食生活が楽しく健康になるようにAIがサポートします！
+</div>
+
+<div class="box2">冷蔵庫の中身の管理</div>
+<img class="image-descriptor" alt="ロゴ" src="fridge.png">
+  　<div class="description">⇒食品を購入した際に、その都度買ったもの・個数を入力してください。
+  　　⇒賞味期限が近づいてきたら、アプリでお知らせします！
+  　　　⇒冷蔵庫の奥から取り出して、いちいち賞味期限を確認する手間が省けられます！
+
+</div>
+
+<div class="box3">料理の提案</div>
+<img class="image-descriptor" alt="ロゴ" src="mealsuggestion.png">
+  　<div class="description">⇒上記の食材をアプリが管理します。
+    ⇒好きな食事の種類、味の好み、健康意識を選択してください。
+  　　⇒残り物だけで作れる料理や、少しの買い出しで安く作れる料理をAIが提案します！
+</div>
+
+<div class="box4">スーパーの情報</div>
+<img class="image-descriptor" alt="ロゴ" src="supermarket.png">
+  　<div class="description">⇒あなたの家計を少しでも楽にします！
+</div>
+
+<div class="box5">廃棄物の削減</div>
+<img class="image-descriptor" alt="ロゴ" src="waste.png">
+  　<div class="description">⇒あなたが開始前と比べてどれだけゴミの削減に貢献したか分かります。
+  　　⇒あなたの自治体のゴミ予算がどれだけ減らせるのか計算します。
+      ⇒減った分の額や、使い道に関しても新たな提案をします！
+</div>
+
+
+
+
+
+
+
+
+
+
+file name: 栄養管理
+
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
+    <style media="screen">
+
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: none;
+    width: 100%;
+    border-style: solid;
+}
+
+h1{
+    text-align: center;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+a{
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+li a {
+    text-decoration: none;
+}
+
+td{
+    text-align: center;
+}
+
+
+
+
+
+    </style>
+    <link rel="stylesheet" href="Rakunchu-Protein-1-June.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script>
+    </script>
+
+    <meta charset="utf-8">
+    <title></title>
+
+
+  </head>
+  <body>
+    <ul>
+    <li><a href="rakunchu.html">ホーム</a></li>
+    <li><a href="栄養管理.html">栄養管理</a></li>
+    <li><a href="冷蔵庫管理.html">冷蔵庫在庫管理</a></li>
+    <li><a href="スーパー情報.html">スーパー情報</a></li>
+    <li><a href="廃棄物.html">廃棄物</a></li>
+    </ul>
+
+<h1>タンパク質</h1>
+
+<div class="information-of-protein">
+  <span class="name-of-protein">タンパク質</span>
+  
+
+  <div class="proteinchartno1">
+
+  <canvas id="ProteinChart1"></canvas>
+
+  <script>
+  var ctx = document.getElementById("ProteinChart1");
+  var ProteinChart1= new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["摂取済み", "未摂取"],
+      datasets: [{
+          backgroundColor: [
+              "#c97586",
+              "#bbbcde",
+          ],
+          data: [60, 40],
+
+      }]
+    },
+
+    options: {
+      title: {
+        display: true,
+        //グラフタイトル
+        text: '今日の摂取の目安'
+      }
+      // 'width':550, 'height':300
+    }
+  });
+  </script>
+
+  </div>
+
+  <div class="proteinchartno2">
+
+  <canvas id="ProteinChart2"></canvas>
+
+  <script>
+  var ctx = document.getElementById("ProteinChart2");
+  var ProteinChart2= new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["摂取済み", "未摂取"],
+      datasets: [{
+          backgroundColor: [
+              "#c97586",
+              "#bbbcde",
+          ],
+          data: [60, 40],
+
+      }]
+    },
+
+    options: {
+      title: {
+        display: true,
+      //グラフタイトル
+        text: '今週の摂取の目安'
+      }
+    // 'width':550, 'height':300
+    }
+  });
+  </script>
+
+  </div>
+
+  <div class="proteinchartno3">
+
+  <canvas id="ProteinChart3"></canvas>
+
+  <script>
+  var ctx = document.getElementById("ProteinChart3");
+  var ProteinChart3= new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ["摂取済み", "未摂取"],
+      datasets: [{
+          backgroundColor: [
+              "#c97586",
+              "#bbbcde",
+          ],
+          data: [60, 40],
+
+      }]
+    },
+
+    options: {
+      title: {
+        display: true,
+      //グラフタイトル
+        text: '今月の摂取の目安'
+      }
+    // 'width':550, 'height':300
+    }
+  });
+  </script>
+
+  </div>
+
+
+  <p></p>
+</div>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+file name: 冷蔵庫管理.html
+
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
+    <style media="screen">
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      ul.navigation_bar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: none;
+        width: 100%;
+        border-style: solid;
+
+      }
+
+      li.link {
+        float: left;
+        border-right: 1px solid #bbb;
+
+      }
+
+      a{
+        display: inline-block;
+        padding: 8px;
+        background-color: #dddddd;
+      }
+
+	a:visited{color: forestgreen}
+
+	a:active{color: firebrick}
+
+
+      li a {
+        text-decoration: none;
+
+      }
+
+      li a:hover{
+        background-color: white;
+      }
+
+
+      h1{
+        text-align:center;
+      }
+
+		h2{
+			margin: 0px;
+		}
+
+      button{
+        background:green;
+        font-size: 30px;
+        border-radius:10px;
+        font-family: "Lucida Console", Courier, monospace;
+      }
+
+      h1{
+        color:green;
+      }
+
+
+		.current{
+			background-color: orange;
+		}
+		.add_food{
+      display:block;
+      border: 5px solid gray;
+			padding-bottom: 1.5%;
+			width: 30%;
+		}
+		.stock{
+      display:block;
+      border: 5px solid black;
+      width: 48%;
+      float: left;
+      height: auto;
+		}
+
+
+		.history{
+    display:block;
+    border: 5px solid black;
+    margin-left: 2px;
+    float: left;
+    width: 20%;
+    height: 460px;
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		}
+
+    .expire_soon{
+      display:block;
+      border: 5px solid gray;
+      margin-left: 2px;
+      width: 29%;
+      float: left;
+    }
+    .残り物{
+      display: block;
+      border: 5px solid gray;
+      width: 100%;
+      float: left;
+
+    }
+
+	div.vegetables{
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		border: 3px solid green;
+		margin: 3px;
+    width: auto;
+    height: 130px;
+	}
+
+	div.meatandfish{
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		border: 3px solid brown;
+		margin: 3px;
+    height: 130px;
+    width: auto;
+    height: 130px;
+	}
+
+	div.others{
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		border: 3px solid gray;
+		margin: 3px;
+    text-decoration: none;
+    height: 130px;
+    width: auto;
+		}
+
+    .class{
+      border: 3px solid green;
+  		margin: 3px;
+      text-decoration: none;
+      float: left;
+    }
+
+
+
+    a.vegeitem
+    {
+      float: left;
+      border: 3px solid forestgreen;
+      height: 60px;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+    }
+
+    a.meatandfishitem
+    {
+      float: left;
+      border: 3px solid brown;
+      height: 60px;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+    }
+
+    a.othersitem
+    {
+      float: left;
+      border: 3px solid gray;
+      height: 60px;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+    }
+
+    a.recent{
+      float: left;
+      border: 3px solid gray;
+      height: 60px;
+      width: auto;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+    }
+
+
+
+    #suggestions{
+        border: 3px solid gray;
+        border-radius: 15px;
+        height: auto;
+        width: auto;
+        float: left;
+        margin: 10px;
+        padding: 10px;
+		text-decoration: none;
+		color: gray;
+          }
+	#suggestions:hover{
+			background-color: coral;
+	}
+
+
+    </style>
+	  </head>
+<body>
+
+    <ul class="navigation_bar">
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/website_scaffold.html">ホーム</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/diet_organizer.html">栄養管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/fridge_organizer.html" class="current">冷蔵庫在庫管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
+    <li class="link"><a href="https://github.com/Rakunchu">Githubのページ</a></li>
+    </ul>
+
+
+<div class="add_food">
+ <label for="food"><h2>食べ物を追加</h2></label><br>
+ <input type="text">
+</div>
+
+<div class="stock">
+	<h2>在庫</h2>
+	 <div class="vegetables">
+     野菜<br>
+     <a class="vegeitem" href="">アイテム1</a>
+     <a class="vegeitem" href="">アイテム2</a>
+     <a class="vegeitem" href="">アイテム3</a>
+     <a class="vegeitem" href="">アイテム4</a>
+     <a class="vegeitem" href="">アイテム5</a>
+     <a class="vegeitem" href="">アイテム6</a>
+     <a class="vegeitem" href="">アイテム7</a>
+     <a class="vegeitem" href="">アイテム8</a>
+     <a class="vegeitem" href="">アイテム9</a>
+     <a class="vegeitem" href="">アイテム10</a>
+     <a class="vegeitem" href="">アイテム11</a>
+
+   </div>
+	<div class="meatandfish">
+    肉と魚<br>
+    <a class="meatandfishitem" href="">アイテム1</a>
+    <a class="meatandfishitem" href="">アイテム2</a>
+    <a class="meatandfishitem" href="">アイテム3</a>
+    <a class="meatandfishitem" href="">アイテム4</a>
+    <a class="meatandfishitem" href="">アイテム5</a>
+    <a class="meatandfishitem" href="">アイテム6</a>
+    <a class="meatandfishitem" href="">アイテム7</a>
+    <a class="meatandfishitem" href="">アイテム8</a>
+    <a class="meatandfishitem" href="">アイテム9</a>
+    <a class="meatandfishitem" href="">アイテム10</a>
+    <a class="meatandfishitem" href="">アイテム11</a>
+  </div>
+	<div class="others">
+    その他<br>
+    <a class="othersitem" href="">アイテム1</a>
+    <a class="othersitem" href="">アイテム2</a>
+    <a class="othersitem" href="">アイテム3</a>
+    <a class="othersitem" href="">アイテム4</a>
+    <a class="othersitem" href="">アイテム5</a>
+    <a class="othersitem" href="">アイテム6</a>
+    <a class="othersitem" href="">アイテム7</a>
+    <a class="othersitem" href="">アイテム8</a>
+    <a class="othersitem" href="">アイテム9</a>
+    <a class="othersitem" href="">アイテム10</a>
+    <a class="othersitem" href="">アイテム11</a>
+  </div>
+</div>
+
+<div class="history">
+<h2>履歴</h2>
+<a class="recent" href="">アイテム1</a>
+<a class="recent" href="">アイテム2</a>
+<a class="recent" href="">アイテム3</a>
+<a class="recent" href="">アイテム4</a>
+<a class="recent" href="">アイテム5</a>
+<a class="recent" href="">アイテム6</a>
+<a class="recent" href="">アイテム7</a>
+<a class="recent" href="">アイテム8</a>
+<a class="recent" href="">アイテム9</a>
+<a class="recent" href="">アイテム10</a>
+<a class="recent" href="">アイテム11</a>
+</div>
+
+<div class="expire_soon">
+<h2>あと5日以内に消費してください</h2>
+</div>
+
+<div class="残り物">
+ <h2>残り物で作れるもの</h2>
+    <a href="ジャンルから選ぶ.html" id="suggestions">ジャンルから選ぶ</a>
+    <a href="使いたい食材から選ぶ.html" id="suggestions">使いたい食材から選ぶ</a>
+    <a href="カロリーから選ぶ.html" id="suggestions">カロリーから選ぶ</a>
+</div>
+
+
+
+
+  </body>
+
+</html>
+
+
+
+
+
+
+
+file name: ジャンルから選ぶ.html
+
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
+    <style media="screen">
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      ul.navigation_bar {
+        list-style-type: none;border: 5px solid black;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: none;
+        width: 100%;
+        border-style: solid;
+
+      }
+
+      li.link {
+        float: left;
+        border-right: 1px solid #bbb;
+
+      }
+
+      a{
+        display: inline-block;
+        padding: 8px;
+        background-color: #dddddd;
+      }
+
+	a:visited{color: forestgreen}
+
+	a:active{color: firebrick}
+
+
+      li a {
+        text-decoration: none;
+      }
+
+  .genre{
+    border: 5px groove black;
+    border-radius: 30px;
+    text-align: center;
+    width: 30%;
+    height: auto;
+    font-size: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+  }
+		
+		.genre:hover{ 
+			background-color: coral;
+		}
+		h1{ 
+		 text-align: center;
+			color: coral;
+		}
+		
+		.return{
+		border: 5px groove black;
+		border-radius: 30px;
+		text-align: center;
+		width: 20%;
+		height: 70px;
+		font-size: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		}
+		
+		.return:hover{
+			background-color: coral;
+		}
+  </style>
+	  </head>
+<body>
+
+    <ul class="navigation_bar">
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/website_scaffold.html">ホーム</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/diet_organizer.html">栄養管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/fridge_organizer.html" class="current">冷蔵庫在庫管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
+    <li class="link"><a href="https://github.com/Rakunchu">Githubのページ</a></li>
+    </ul>
+<h1>ジャンルから選ぶ</h1>
+<div class="genre" id="一品料理">
+一品料理
+</div>
+<div class="genre" id="デザート">
+  デザート
+</div>
+<div class="genre" id="おかず">
+  おかず
+</div>
+<div class="genre" id="汁物">
+  汁物
+</div>
+<div class="genre" id="飲み物">
+  飲み物
+</div>
+	
+<a href="fridge_organizer.html" class="return">戻る</a>
+
+
+
+
+
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+file name: 使いたい食材から選ぶ.html
+
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
+    <style media="screen">
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      ul.navigation_bar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: none;
+        width: 100%;
+        border-style: solid;
+
+      }
+
+      li.link {
+        float: left;
+        border-right: 1px solid #bbb;
+
+      }
+
+      a{
+        display: inline-block;
+        padding: 8px;
+        background-color: #dddddd;
+      }
+
+	a:visited{color: forestgreen}
+
+	a:active{color: firebrick}
+
+
+      li a {
+        text-decoration: none;
+      }
+
+	.stock{
+      display:block;
+      border: 5px solid black;
+      width: 100%;
+      float: left;
+      height: auto;
+	}
+		
+		
+		div.vegetables{
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		border: 3px solid green;
+		margin: 3px;
+    width: auto;
+    height: auto;
+	}
+
+	div.meatandfish{
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		border: 3px solid brown;
+		margin: 3px;
+    height: 130px;
+    width: auto;
+    height: auto;
+	}
+
+	div.others{
+    list-style-type: none;
+    overflow: scroll;
+    white-space: nowrap;
+		border: 3px solid gray;
+		margin: 3px;
+    text-decoration: none;
+    height: auto;
+    width: auto;
+		}
+
+
+
+    div.vegeitem
+    {
+	  
+      float: left;
+      border: 3px solid forestgreen;
+      height: 60px;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+	  background-color: white;
+    }
+
+    div.meatandfishitem
+    {
+      float: left;
+      border: 3px solid brown;
+      height: 60px;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+	   background-color: white;
+    }
+
+    div.othersitem
+    {
+      float: left;
+      border: 3px solid gray;
+      height: 60px;
+      text-align: center;
+      color: grey;
+      margin:5px;
+      text-decoration: none;
+      display: inline-flex;
+	   background-color: white;
+    }
+
+		h1{ 
+		 text-align: center;
+			color: coral;
+		}
+		
+		.search{ 
+		border: 5px groove black;
+		border-radius: 30px;
+		text-align: center;
+		width: 50%;
+		height: auto;
+		font-size: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		}
+		
+		.search:hover{
+			background-color: coral;
+		}
+		
+		.return{
+		border: 5px groove black;
+		border-radius: 30px;
+		text-align: center;
+		width: 20%;
+		height: 70px;
+		font-size: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		}
+		
+		.return:hover{
+			background-color: coral;
+		}
+		
+		
+  </style>
+	  </head>
+<body>
+
+    <ul class="navigation_bar">
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/website_scaffold.html">ホーム</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/diet_organizer.html">栄養管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/fridge_organizer.html" class="current">冷蔵庫在庫管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
+    <li class="link"><a href="https://github.com/Rakunchu">Githubのページ</a></li>
+    </ul>
+<h1>食材を選んでください</h1>
+	
+<div class="stock">
+	<h2>在庫</h2>
+	 <div class="vegetables">
+     野菜<br>
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム1</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム2</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム3</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム4</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム5</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム6</div >
+     <div class="vegeitem" onClick = "selecting(this)">アイテム7</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム8</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム9</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム10</div >
+     <div  class="vegeitem" onClick = "selecting(this)">アイテム11</div >
+
+   </div>
+	<div class="meatandfish">
+    肉と魚<br>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム1</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム2</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム3</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム4</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム5</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム6</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム7</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム8</div>
+    <div class="meatandfishitem" onClick = "selecting(this)" >アイテム9</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム10</div>
+    <div class="meatandfishitem" onClick = "selecting(this)">アイテム11</div>
+  </div>
+	<div class="others">
+    その他<br>
+    <div class="othersitem" onClick = "selecting(this)">アイテム1</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム2</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム3</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム4</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム5</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム6</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム7</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム8</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム9</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム10</div>
+    <div class="othersitem" onClick = "selecting(this)">アイテム11</div>
+  </div>
+	
+	<div class="search">検索</div>
+</div>
+	<a href="fridge_organizer.html" class="return">戻る</a>
+
+
+<script>
+	function selecting (item){ 
+		if (item.style.backgroundColor === "coral"){
+			item.style.backgroundColor = "white";
+		}else{ 
+			item.style.backgroundColor = "coral";
+			
+		}
+	}
+</script>
+
+
+</body>
+
+   
+
+</html>
+
+
+
+
+
+
+
+
+file name: カロリーから選ぶ.html
+
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
+    <style media="screen">
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      ul.navigation_bar {
+        list-style-type: none;border: 5px solid black;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: none;
+        width: 100%;
+        border-style: solid;
+
+      }
+
+      li.link {
+        float: left;
+        border-right: 1px solid #bbb;
+
+      }
+
+      a{
+        display: inline-block;
+        padding: 8px;
+        background-color: #dddddd;
+      }
+
+	a:visited{color: forestgreen}
+
+	a:active{color: firebrick}
+
+
+      li a {
+        text-decoration: none;
+      }
+
+  .genre{
+    border: 5px groove black;
+    border-radius: 30px;
+    text-align: center;
+    width: 30%;
+    height: auto;
+    font-size: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+  }
+
+		.genre:hover{
+			background-color: coral;
+		}
+		h1{
+		 text-align: center;
+			color: coral;
+		}
+
+    .slidecontainer {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .slider:hover {
+    opacity: 1;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+  .search{
+  border: 5px groove black;
+  border-radius: 30px;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: blackz;
+  }
+
+  .search:hover{
+    background-color: coral;
+  }
+  
+  .return{
+		border: 5px groove black;
+		border-radius: 30px;
+		text-align: center;
+		width: 20%;
+		height: 70px;
+		font-size: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		}
+		
+		.return:hover{
+			background-color: coral;
+		}
+
+  </style>
+	  </head>
+<body>
+
+    <ul class="navigation_bar">
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/website_scaffold.html">ホーム</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/diet_organizer.html">栄養管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/fridge_organizer.html" class="current">冷蔵庫在庫管理</a></li>
+    <li class="link"><a href="file:///Users/shunaso/Desktop/Rakunchu/market_info.html">スーパー情報</a></li>
+    <li class="link"><a href="https://github.com/Rakunchu">Githubのページ</a></li>
+    </ul>
+    <h1>カロリーから選ぶ</h1>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <h2>カロリー量: <span id="demo"></span> kcal</h2>
+    </div>
+    <div class="search">検索</div>
+<a href="冷蔵庫管理.html" class="return">戻る</a>
+    <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+//    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+    </script>
+	
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+file name: 廃棄物.html
+
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <img href="rakunchu.html" alt="ロゴ" src="rakunchu2.png" width="20%" height="20%">
+    <style media="screen">
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: none;
+    width: 100%;
+    border-style: solid;
+}
+
+h1{
+    text-align: center;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+a{
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+li a {
+    text-decoration: none;
+}
+
+td{
+    text-align: center;
+}
+
+.btn-real {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 40px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  background-image: darkorange;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+  border-bottom: solid 2px #b5b5b5;
+  position: absolute; left: 90%; top: 70%;
+}
+.btn-real i {
+  line-height: 80px;
+}
+.btn-real:active {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+  border-bottom: none;
+}
+
+.btn-flat-dashed-filled1 {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: black;
+  border: dashed 2px black;
+  background: cornflowerblue;
+  border-radius: 3px;
+  transition: .4s;
+  margin-top: 2%;
+  margin-left: 10%;
+  width: 20%;
+  height: 20%;
+}
+
+.btn-flat-dashed-filled1:hover {
+  background: #cbedff;
+  color: #FFF;
+}
+
+.btn-flat-dashed-filled3 {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: black;
+  border: dashed 2px black;
+  background: cornflowerblue;
+  border-radius: 3px;
+  transition: .4s;
+  margin-top: 2%;
+  margin-left: 10%;
+  width: 20%;
+  height: 20%;
+}
+
+.btn-flat-dashed-filled3:hover {
+  background: #cbedff;
+  color: #FFF;
+}
+
+.btn-flat-dashed-filled2 {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: black;
+  border: dashed 2px black;
+  background: cornflowerblue;
+  border-radius: 3px;
+  transition: .4s;
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 40%;
+  height: 20%;
+}
+
+.btn-flat-dashed-filled2:hover {
+  background: #cbedff;
+  color: #FFF;
+}
+
+.btn-flat-dashed-filled4 {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: black;
+  border: dashed 2px black;
+  background: cornflowerblue;
+  border-radius: 3px;
+  transition: .4s;
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 40%;
+  height: 20%;
+}
+
+.btn-flat-dashed-filled4:hover {
+  background: #cbedff;
+  color: #FFF;
+}
+
+.slide-wrapper{
+  display: inline-block;
+  width: 20px;
+  height: 150px;
+  padding: 0;
+  top: 20px;
+  left:100px;
+  float: right;
+  margin-right: 5%;
+}
+
+
+.slide-wrapper input{
+    width: 150px;
+    height: 20px;
+    margin: 0;
+    transform-origin: 75px 75px;
+    transform: rotate(-90deg);
+}
+
+.fade{
+    animation: fadeIn 10.0s ease 0.3s 1 normal;
+}
+
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+
+}
+</style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+    <li><a href="ホーム.html">ホーム</a></li>
+    <li><a href="栄養管理.html">栄養管理</a></li>
+    <li><a href="冷蔵庫管理.html">冷蔵庫在庫管理</a></li>
+    <li><a href="スーパー情報.html">スーパー情報</a></li>
+    <li><a href="廃棄物.html">廃棄物</a></li>
+    </ul>
+
+<h1>廃棄物</h1>
+
+<div class="slide-wrapper">
+  <input type="range" min="0" max="100" value="50" class="slider" id="elephant">
+</div>
+
+<table border="3" bordercolor="black" width=80% height="300" align=center>
+    <tr>
+      <th>  　</th>
+      <th>　捨　て　る　も　の　</th>
+      <th>　量　</th>
+    </tr>
+    <tr>
+      <td>月</td>
+      <td></td>
+      <td width=7%><span id="jet"></span> %</td>
+    </tr>
+    <tr>
+      <td>火</td>
+      <td>　</td>
+    </tr>
+    <tr>
+      <td>水</td>
+      <td>　</td>
+    </tr>
+    <tr>
+      <td>木</td>
+      <td>　</td>
+    </tr>
+    <tr>
+      <td>金</td>
+      <td>　</td>
+    </tr>
+    <tr>
+      <td>土</td>
+      <td>　</td>
+    </tr>
+  </table>
+
+<a href="#" class="btn-real">
+  <i class="fa fa-power-off">完了</i>
+</a>
+
+<a class="btn-flat-dashed-filled1"><input type="button" onclick="ttt"/>先週との比較</a>
+
+<a class="btn-flat-dashed-filled2">廃棄物に関するニュース</a>
+
+<a class="btn-flat-dashed-filled3">食品ロスについて</a>
+
+<a class="btn-flat-dashed-filled4">あなたにできること</a>
+
+<p id="baseball">らくんちゅ</p>
+
+<script>
+      var slider = document.getElementById("elephant");
+      var output = document.getElementById("jet");
+      output.innerHTML = slider.value;
+    
+      slider.oninput = function(){
+          output.innerHTML = this.value;
+      }
+    </script>
+<script>
+document.getElementById("baseball").style.visibility ="hidden";
+
+function ttt{
+	const baseball = document.getElementById("baseball");
+
+	if(baseball.style.visibility=="visible"){
+		baseball.style.visibility ="hidden";
+	}else{
+		baseball.style.visibility ="visible";
+	}
+}
+</script>
+
+
